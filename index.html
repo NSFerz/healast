@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:500,700" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link type="text/css" rel="stylesheet" href="src/css/style.css"/>
+    <link rel="stylesheet" href="src/css/reset.scss">
+    <link type="text/css" rel="stylesheet" href="src/css/style.scss"/>
     
     <title>HEALAS.LT</title>
 </head>
@@ -25,18 +24,15 @@
                         </ul>
                     </nav>
                     <div class="header__button">
-                        <a href="" class="button">Get Started Now
-                        <!-- <img src="image/svg/botton.svg" alt="Кнопка"> -->
-                    </a>
+                        <a href="" class="button">Get Started Now</a>
                     </div>
 
                     
                 </div>
             </header>
-            <main class="main">
                 <section class="save">
                 <div class="save__container">
-                    <div class="save__content"></div>
+                    <div class="save__content">
 
                         <div class="save-block__text">
                             <h1 class="block-text_chapter">Gaming Consoles</h1>
@@ -46,43 +42,155 @@
                                 point of using Lorem Ipsum is that it has a more-or-less normal<br>
                                 distribution of letters as opposed.</p><br></div>
                             <a href="" class="block-text__button button">Get Started Now</a>
+                            <img src="src/assets/image/svg/krestik.svg" class="image-kres" alt="Крестик">
+                            <img src="src/assets/image/svg/Arrow.svg" class="image-arov" alt="стрелки">
                         </div>
+                    </div>
 
 
                         <div class="save__container1">
-                        <div class="image-box">
-                            <a href="">
-                                <img src="src/assets/image/svg/box.svg" alt="кнопка для приложения">
-                            </a>
+
+                            <div class="save__image">
+                                <img src="src/assets/image/svg/CFARACTER.svg" class="img"  alt="Картинка мальчик в игровой">
+
+                                <a href="#" class="box1">
+                                    <img src="src/assets/image/svg/box1.svg" alt="кнопка для приложения">
+                                </a>
+
+                                
+
+                                <a href="#" class="box">
+                                    <img src="src/assets/image/svg/box.svg"  alt="Кнопка для приложения">
+                                </a>
+                            </div>
+
+                           -- <img src="src/assets/image/svg/DOTS.svg" class="image-dot" alt="фоновая штука"> -->
                         </div>
-                        <img src="src/assets/image/svg/DOTS.svg" class="image-dot" alt="фоновая штука">
-
-
-                    <div class="save__image">
-                        <img src="src/assets/image/svg/CFARACTER.svg"  alt="Картинка мальчик в игровой">
-                    </div>
-
-
-                    
-                        <a href="" class="image-box1">
-                            <img src="src/assets/image/svg/box.svg"  alt="Кнопка для приложения">
-                        </a>
-                    
-                    </div>
-
-
-
-                    
-                    <img src="src/assets/image/svg/krestik.svg" class="image-kres" alt="Крестик">
-                    <img src="src/assets/image/svg/Arrow.svg" class="image-arov" alt="стрелки">
-                    
-                
-
                 </div>
             </section>
-            </main>
+
+
+
+            <!-- Это начало 2 страницы сайта -->
+            <section class="vr">  
+                <!-- это 1 контейнер с картинкой -->
+                <div class="vr__container">
+                    <div class="vr__image">
+                    <img src="src/assets/image/svg/illutration.svg" alt="мальчик перед телеком"></div>
+                    </div>
+
+                <!-- это второй контейнер с текстом справа -->
+                <div class="about__container">
+                    <h1 class="about__vr">About VR Glasses</h1>
+                    <h1 class="about__title">The New VR Glasses<br>Series</h1>
+                    <p class="about__text">It is a long established fact that a reader will be distracted by<br>
+                                             the readable content of a page when looking at its layout. The<br>
+                                             point of using Lorem Ipsum is that it has a more-or-less normal<br>
+                                             distribution of letters as opposed.</p>
+                    <div class="about__button">
+                        <a href="#" class= button>Get Started Now</a></div>
+
+                </div>
+                <img src="/src/assets/image/svg/men.svg" class="vr__fon" alt="Фон пацан"> 
+            </section>
+
+            <section class="xbox" style="background-image: url(src/assets/image/svg/fon3block.svg);">  
+                <div class="xbox__container">
+                    <div class="xbox__vr">About XBOX, PS</div>
+                    <div class="xbox__title">The New Xbox, Ps<br>Series</div>
+                    <div class="xbox__text">It is a long established fact that a reader will be distracted by<br>
+                                             the readable content of a page when looking at its layout. The<br>
+                                             point of using Lorem Ipsum is that it has a more-or-less normal<br>
+                                             distribution of letters as opposed.</div>
+                    <div class="xbox__button">
+                        <a href="#" class= button>Get Started Now</a></div>
+                </div>
+                <div class="gamepad__container">
+                    <div class="gamepad__image">
+                    <img src="src/assets/image/svg/gamepad.svg" alt="геймпад"></div>
+                    </div>
+            </section>
+            <section class="plan">
+                <div class="container">
+                    <div class="plan__minitext">Our Pricing</div>
+                    <div class="plan__title title">Choose Your Plan</div>
+                    <div class="plan__body">
+                        <div class="plan__row">
+                            <div class="plan__column">
+                                <div class="plan__item">
+                                    <div class="plan__verh">Basic</div>
+                                    <div class="plan__mani">$50.00<span> / Per Hour</span></div>
+                                    <div class="plan__text">
+                                        <ul>
+                                            <li>10 users included</li>
+                                            <li>2 GB of storage</li>
+                                            <li>Email support</li>
+                                            <li>Help center access</li>
+                                            <li>10 users included</li>       
+                                        </ul>
+                                    </div>
+                                    <a href="" class="plan__btn btn">Select This Plan</a>
+                                </div>
+                                
+                            </div>
+                            <div class="plan__column">
+                                <div class="plan__item">
+                                    <div class="plan__verh">Standard</div>
+                                    <div class="plan__mani">$95.00<span> / Per Hour</span></div>
+                                    <div class="plan__text">
+                                        <ul>
+                                            <li>10 users included</li>
+                                            <li>2 GB of storage</li>
+                                            <li>Email support</li>
+                                            <li>Help center access</li>
+                                            <li>10 users included</li>       
+                                        </ul>
+                                    </div>
+                                    <a href="" class="plan__btn btn">Select This Plan</a>
+                                </div>
+                                
+                            </div>
+                            <div class="plan__column">
+                                <div class="plan__item">
+                                    <div class="plan__verh">Premium</div>
+                                    <div class="plan__mani">$120.00<span> / Per Hour</span></div>
+                                    <div class="plan__text">
+                                        <ul>
+                                            <li>10 users included</li>
+                                            <li>2 GB of storage</li>
+                                            <li>Email support</li>
+                                            <li>Help center access</li>
+                                            <li>10 users included</li>       
+                                        </ul>
+                                    </div>
+                                    <a href="" class="plan__btn btn">Select This Plan</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
             <footer class="footer">
-                footer
+                <div class="container1">
+                    <div class="footer__logo">
+                        <a href="">
+                            <img src="src/assets/image/svg/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="footer__text">СCopyright © 2022 HEALAS.LT. All Rights Reserved.</div>
+                    <div class="footer__meta">
+                        <a href="">
+                            <img src="src/assets/image/svg/meta.svg">
+                        </a>
+
+                    </div>
+                </div>
+                
+                    
+                </div>
+                
             </footer>
         </div>    
     </body>
