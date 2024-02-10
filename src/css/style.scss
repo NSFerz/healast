@@ -18,6 +18,8 @@
 
 
 
+
+
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -35,50 +37,143 @@ body {
   font-family: 'josefin-sans';
   font-size: 18px;
   color: #446381;
+  background-color: #ffe6d7;
 }
-
-
-.main {
-  flex: 1 1 auto;
-}
-
-.header__container {
-  max-width: 1202px;
-  margin: 0px auto;
-  padding: 0px 15px;
-  display: flex;
-  min-height: 121px;
-  align-items: center;
-}
-.save__container {
-  max-width: 1202px;
-  margin: 0px auto;
-  padding: 0px 15px;
-}
-
-
 .header {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 50;
-
-
 }
-/* .header__container {
-  display: flex;
-  min-height: 121px;
-  align-items: center;
-} */
+
+.header:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content{
+  margin: 15px 0px 0px 0p
+}
+.header__burger {
+  display: none;
+}
+
+@media (max-width:767px){
+  
+  
+
+  .header__button{
+    max-width: 50%;
+    width: 80px;
+    display: none;
+    
+  }
+ 
+  .menu__link{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0px 0px 0px;
+  }
+  .header__logo img{
+    width: 150px;
+  }
+  .header__container{
+    height: 80px;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 5;
+    
+  }
+  .header__burger span{
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    top: 9px;
+    
+
+  }
+  
+  .header__burger:before,
+  .header__burger:after{
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burger:before{
+    top: 0;
+  }
+  .header__burger:after{
+    bottom: 0;
+  }
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: #e6b7b6;
+    z-index: 3;
+    
+    
+
+  }    
+}
+
+
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1192px;
+    height: 121px;
+    margin: auto;
+}
+.save__container {
+  max-width: 1202px;
+  margin: 0px auto;
+  padding: 0px 15px;
+  
+}
+
 
 
 
 .header__logo {
+  flex: 0 0 286px;
   margin: 0px 0px 0px 19px;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.header__logo img{
+  max-width: 100%;
+  display: block;
+
+  
+  
 }
 
 .header__menu {
+  
   flex: 1 1 auto;
 }
 .header__button {
@@ -150,6 +245,10 @@ body {
 }
 .menu__item {
   margin: 0px 42px 0px 0px;
+  &:hover {
+    transform: scale(1.2);
+    transition: ease 0.4s;
+  }
 }
 .menu__link {
   font-family: Josefin Sans;
@@ -161,7 +260,8 @@ body {
   color: #446381;
   text-decoration: none;
   transition: background-color 0.3s ease 0s;
-  }
+  
+}
   .menu__link:hover {
     color: #0f73d0;
   }
@@ -177,8 +277,14 @@ body {
   background-repeat: no-repeat;
   
 }
+.save__content{
+  display: flex;
+  align-items: center;
+}
 .save__container {
   display: flex;
+  
+  justify-content: center;
   
   
 }
@@ -189,6 +295,7 @@ body {
 .save__container1 {
   width: 50%;
   height: 600px;
+  
   
 }
 .save__image {
@@ -216,6 +323,9 @@ body {
   
   
 
+}
+.box img{
+  display: block;
 }
 
 
@@ -376,7 +486,9 @@ span {
   display: flex;
   background-color: #ffe6d7;
   
-
+}
+.vr__container {
+  
 
   
   
@@ -485,7 +597,7 @@ span {
 /* ################################################################################################################################################### */
 
 .xbox {
-  
+  background-image: url(../assets/image/svg/fon3block.svg);
   
   display: flex;
   margin: auto;
@@ -493,6 +605,7 @@ span {
   
 }
 .xbox__container {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -569,9 +682,9 @@ span {
   text-decoration: none;
   transition: background-color 0.3s ease 0s;
 }
-
+.gamepad__container {
   
-
+}
 .gamepad__image {
   padding: 79px 134px 92px 0px;
 }
@@ -588,7 +701,10 @@ span {
   padding: 48px 0px 48px 0px;
   background-color: #ffe6d7;
 }
-
+.container {
+  
+  
+}
 .plan__minitext {
   text-align: center;
   color: rgb(68, 99, 129);
@@ -712,7 +828,8 @@ span {
 
 
 .footer {
-  max-width: 1192px;
+  display: flex;
+  justify-content: center;
   margin: 0px 0px 0px 0px;
   
   
